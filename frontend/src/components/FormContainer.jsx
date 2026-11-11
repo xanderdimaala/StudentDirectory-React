@@ -3,13 +3,13 @@ const FormComponent = () => {
     <>
       <section id="formContainer">
         <form id="studentForm">
-          <div class="input-field">
-            <label for="Program">Student Name</label>
-            <input type="type" name="Program" id="Program"></input>
+          <div className="input-field">
+            <label htmlFor="name">Student Name</label>
+            <input type="text" name="name" id="name"></input>
           </div>
-          <div class="input-field">
-            <label for="Program">Student Program</label>
-            <input type="type" name="Program" id="Program"></input>
+          <div className="input-field">
+            <label htmlFor="program">Student Program</label>
+            <input type="text" name="program" id="program"></input>
           </div>
           <div>
             <button>Add Student</button>

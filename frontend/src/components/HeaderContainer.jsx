@@ -3,7 +3,7 @@ const HeaderComponent = () => {
     <>
       <section id="headerContainer">
         <h1>Student Directory</h1>
-        <small>Show List of Students</small>
+        <small>Show list of students</small>
       </section>
     </>
   );

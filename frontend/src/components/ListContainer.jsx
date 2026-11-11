@@ -1,11 +1,15 @@
-const ListComponent = () => {
+const ListComponent = ({ data }) => {
   return (
     <>
       <section id="listContainer">
-        <article>
-          <h2>Name</h2>
-          <p>Program</p>
-        </article>
+        {data.map((student) => (
+          <article key={student.id} className="list-item">
+            <h1>{student.name}</h1>
+            <p>{student.program}</p>
+            <small>{student.srcode}</small>
+            <button>Delete</button>
+          </article>
+        ))}
       </section>
     </>
   );
